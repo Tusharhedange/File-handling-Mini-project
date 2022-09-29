@@ -7,7 +7,7 @@ filename=input('please enter file name: ')
 if os.path.isfile(filename):
     print(f'{filename} is available')
     
-    option=input('read or write operation:')
+    option=input('read or write or correction of word operation:')
     if option.lower()=='read':
         with open(filename,'r') as f:
             data=f.read()
